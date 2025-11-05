@@ -7,10 +7,21 @@
 
     //ENTRADA
 
+    let soma = 0;
+    let media = 0;
+    let quant = 0;
 
     //PROCESSAMENTO
 
+    for(let i = 0; i <= 4; i++){
+        let n = Number(prompt(`Informe um número:`));
+        quant++
+
+    soma += n
+    media = soma / quant;
+    }
 
     //SAÍDA
+    document.write(`A soma dos números é: ${soma} <br> A média é: ${media}`);
 
 </script>
