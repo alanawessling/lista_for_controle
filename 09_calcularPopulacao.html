@@ -7,10 +7,20 @@
 
     //ENTRADA
 
-    
+    let p5 = 50000;
+    let p10 = 50000;
+
     //PROCESSAMENTO
-    
+
+    for (let i = 0; i < 5; i++) {
+        p5 += p5 * 0.015;
+    }
+
+    for (let i = 0; i < 10; i++) {
+        p10 += p10 * 0.015;
+    }
 
     //SAÍDA
+    alert(`População em 5 anos terá ${p5.toFixed(0)} habitantes\n\n População em 10 anos terá ${p10.toFixed(0)} habitantes`);
 
 </script>
