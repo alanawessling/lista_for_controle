@@ -7,16 +7,18 @@
     */
 
     //ENTRADA
-
-    let nota = Number(prompt(`Informe quantas notas o aluno obteve?`));
+    let quant = Number(prompt(`Quantas notas o aluno teve?`))    
 
     //PROCESSAMENTO
-    
-    for(let quant = 0; quant <= nota; quant++){
-    let notas = Number(prompt(`Informe quais são as notas o aluno obteve?`));
+    for(let i = 0; i < quant; i++ ){
+        let nota = Number(prompt(`Informe a nota ${i + 1}:`));
+        if (i === 0) {
+            var media = 0;
+        }
+        media += nota;
     }
-
-
+    media = media / quant;
+    alert(`A média é ${media.toFixed(2)}`);
 
     //SAÍDA
 

@@ -7,10 +7,22 @@
 
     //ENTRADA
 
+    let impar = [];
+    let n = [];
 
     //PROCESSAMENTO
 
+    for (let i = 0; i <= 50; i++) {
+        n.push(i)
+    }
+    for (let i = 0; i < n.length; i++) {
+        if (i % 2 === 1) {
+            impar.push(i)
+        }
+    }
 
     //SAÍDA
+
+    alert(`Os números impares são: ${impar.join(`, `)}`)
 
 </script>
